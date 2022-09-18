@@ -1,9 +1,12 @@
 {
+  "homepage": "https://MohamedHassan117.githun.io/Map_by_React/",
   "name": "project-name",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack-dev-server --mode development --open",
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
@@ -18,7 +21,6 @@
   "bugs": {
     "url": "https://github.com/vannizhang/{project-name}/issues"
   },
-  "homepage": "https://github.com/vannizhang/{project-name}#readme",
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/plugin-proposal-class-properties": "^7.10.1",
@@ -63,6 +65,7 @@
     "d3": "^5.16.0",
     "date-fns": "^2.14.0",
     "esri-loader": "^3.3.0",
+    "gh-pages": "^4.0.0",
     "helper-toolkit-ts": "^1.1.10",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
